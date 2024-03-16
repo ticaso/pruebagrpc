@@ -1,0 +1,36 @@
+syntax = "proto3";
+option go_package = "github.com/ticaso/pruebagrpc/api";
+
+// El servicio que define las operaciones de los aspirantes.
+service AspiranteService {
+  // Obtiene un solo aspirante por ID.
+  rpc GetAspirante(GetAspiranteRequest) returns (AspiranteResponse) {}
+  // Obtiene una lista de todos los aspirantes.
+  rpc GetAspirantes(AspiranteRequest) returns (AspirantesResponse) {}
+}
+
+// La solicitud para obtener un solo aspirante por ID.
+message GetAspiranteRequest {
+  int32 id = 1;
+}
+
+// La respuesta que contiene un solo aspirante.
+message AspiranteResponse {
+  Aspirante aspirante = 1;
+}
+
+// La solicitud para obtener aspirantes, puede incluir parámetros de filtrado.
+message AspiranteRequest {
+}
+
+// La respuesta que contiene la lista de aspirantes.
+message AspirantesResponse {
+  repeated Aspirante aspirantes = 1;
+}
+
+// Define la estructura de un aspirante.
+message Aspirante {
+  int32 id = 1;
+  string nombre = 2;
+  string apellido = 3;
+}
