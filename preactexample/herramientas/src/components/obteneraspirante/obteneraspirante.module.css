@@ -1,0 +1,62 @@
+.perfil {
+ 
+    border-radius: 0.75rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+
+  }
+  
+.card {
+    max-width: '18rem';
+    background-color: #d3d3d3; 
+    border-radius: 0.75rem; 
+
+}
+  
+.container {
+  min-height: 100vh; 
+  display:contents; }
+
+.title{
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.carrera{
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.lenguajes{
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.favorito{
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.imagenfavorito{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: auto;
+}
+  

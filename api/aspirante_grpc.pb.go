@@ -4,7 +4,7 @@
 // - protoc             v5.26.0
 // source: aspirante.proto
 
-package pruebagrpc
+package api
 
 import (
 	context "context"
